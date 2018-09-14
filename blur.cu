@@ -58,7 +58,7 @@ void blur(const cv::Mat& input, cv::Mat& output) {
     cudaMemcpy(d_input,input.ptr(), bytes, cudaMemcpyHostToDevice);
 
     //Specify block size
-    const dim3 block(1024, 1024);
+    const dim3 block(32, 32);
 
     //Calculate grid size to cover the whole image
     const dim3 grid((int)ceil((float)input.cols / block.x), (int)ceil((float)input.rows/ block.y));

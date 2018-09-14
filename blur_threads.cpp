@@ -1,5 +1,5 @@
 // Implements image box blur using CPU with threads with OpenMP.
-// Compile with g++ blur_threads.cpp -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_imgcodecs -std=c++11
+// Compile with g++ blur_threads.cpp -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_imgcodecs -std=c++11 -fopenmp -Wall -Ofast
 
 #include <iostream>
 #include <cstdio>
